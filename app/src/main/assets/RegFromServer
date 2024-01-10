@@ -8,8 +8,8 @@
             "displayName": "testemail",
             "name": "testemail@test.com"
         },
-        "temporaryAuthenticationToken": "eyJ0eXAiOiJKV1QiLCJhbGciOiJFZERTQSJ9.eyJpc3MiOiJhdXRoLmRmbnMubmluamEiLCJhdWQiOiJkZm5zOmF1dGg6dXNlciIsInN1YiI6Im9yLTVyYTdpLTRhN29mLTg0Mjk4MjFmMTkwMDQ0aXEiLCJqdGkiOiJ1ai03c2dncS1lYWJncC04aTJwczlvNjAxMmhqMXVoIiwic2NvcGUiOiIiLCJwZXJtaXNzaW9ucyI6W10sImh0dHBzOi8vY3VzdG9tL3VzZXJuYW1lIjoiY2xpZW50YW5kcm9pZCs1QHRlc3QuY29tIiwiaHR0cHM6Ly9jdXN0b20vYXBwX21ldGFkYXRhIjp7InVzZXJJZCI6InVzLTV2MjBxLXIzNWEwLTltdDhzaGNvcDB0aHZmZDQiLCJvcmdJZCI6Im9yLTVyYTdpLTRhN29mLTg0Mjk4MjFmMTkwMDQ0aXEiLCJ0b2tlbktpbmQiOiJDb2RlIiwiY2hhbGxlbmdlIjoie1wiY2hhbGxlbmdlXCI6XCJjaC0xZHRlYy1wZG1iaS05ZG9xMDhxbWdua2ltYzlzXCIsXCJjcmVkSW5mb1wiOlwiZS94SERzZGhaeFF0V01oKy9hcTZ6eUxkQnV0S2tCeCtOS1NmanNkelRDZXhBdVFxSnRmZnhtYU5XL21taStXUUNtL290WmZ1SjVaNkhncDRhc1hlcjRUcEVqQXcyMitkMzBickN6UzFOZTJ3a05TTDBDMzFJbitKbjA1aEFSWFRaTVVnZkg3MXhlSzYxRExQbGs3eUxqcGd4cDdPRGg1ME1yay9Wck03YjFFM1lKd2ZMd0lxZlZhanVkY1pvaUkxOUVsQlZkN2YzRUtHaG5NRmxpK3VoV2phWE9aQnRna1lQWkNXYTZjSEtYbmU3THN6V2s4Yk5EbEFkU3pLMHdiZ0ZVRkNUMVluTmM5YUVXNm44QmxIaUZaVG9YbmhnRDFyQ1MzS3pJWHhvVXJJZWxvZmdkZE9MRmQxc1hPTDExZm1kSDJsNUdyUEpLanFKYXpZd3A1VGR3PT1cIn0ifSwiaWF0IjoxNzAzODU2NTMwLCJleHAiOjE3MDM4NTc0MzB9.iNllTH8H9O9n1CQuIzzIRL8CkrVUjMphN4xUzEhBRou9XFUwUxvFrMTK93ggL_STGg8LwNMvxOqCvFbH21wbAQ",
-        "challenge": "ch-1dtec-pdmbi-9doq08qmgnkimc9s",
+        "temporaryAuthenticationToken": "iNllTH8H9O9n1CQuIzzIRL8CkrVUjMphN4xUzEhBRou9XFUwUxvFrMTK93ggL_STGg8LwNMvxOqCvFbH21wbAQ",
+        "challenge": "ch-1dtec-pdmbi-9doq08qmgnkidss",
         "pubKeyCredParams": [
             {
                 "type": "public-key",
@@ -42,10 +42,9 @@
                   "webauthn": [
                       {
                           "type": "public-key",
-                          "id": "jtOYTJhXL4ni6Liiejdtbg"
+                          "id": "jtOYTJhXL4sd6Liiejdtbg"
                       }
                   ],
                   "key": []
-              },
-        "otpUrl": "otpauth://totp/dfns.ninja:clientandroid%2B5%40test.com?issuer=dfns.ninja&secret=URFOZKBH633ELTXUBZ3TNXTPBV4TKWWMSH4NCMSEPXMGOKAEG24EJFI5BUV4BPZOMTR26R67SH4UT3YCQLG5WHPVSAIJNPAZ7HCCQAA&algorithm=SHA512&digits=6&period=30"
-    }
+              }
+     }

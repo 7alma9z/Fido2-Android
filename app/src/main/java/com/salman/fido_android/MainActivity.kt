@@ -23,7 +23,9 @@ import com.salman.signertool.operations.Registration
 import com.salman.signertool.operations.SignerToolOperation
 import com.salman.signertool.operations.Signing
 import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.Job
 import kotlinx.coroutines.launch
+import kotlinx.coroutines.withContext
 import java.lang.ref.WeakReference
 
 
@@ -59,7 +61,10 @@ class MainActivity : ComponentActivity() {
                             val json =
                                 fetchRegistrationJsonFromServer(this@MainActivity, "RegFromServer")
 
-                            signertoolOperation(json = json, registration)
+                            lifecycleScope.launch {
+                                val result = signertoolOperation(json = json, registration)
+                                println(result.getOrNull())
+                            }
                         }) {
                             Text(text = "Register")
                         }
@@ -67,8 +72,10 @@ class MainActivity : ComponentActivity() {
                         Button(onClick = {
                             val json =
                                 fetchRegistrationJsonFromServer(this@MainActivity, "AuthFromServer")
-
-                            signertoolOperation(json = json, sign)
+                            lifecycleScope.launch {
+                                val result = signertoolOperation(json = json, sign)
+                                println(result.getOrNull())
+                            }
                         }) {
                             Text(text = "Sign")
                         }
@@ -117,8 +124,11 @@ class MainActivity : ComponentActivity() {
         }
     }
 
-    private fun signertoolOperation(json: String, signerToolOperation: SignerToolOperation) {
-        lifecycleScope.launch {
+    private suspend fun signertoolOperation(
+        json: String,
+        signerToolOperation: SignerToolOperation
+    ): Result<JsonObject> {
+        return withContext(Dispatchers.Main) {
             SignerTool.getInstance().performOperation(Dispatchers.Main, signerToolOperation, json)
         }
     }
